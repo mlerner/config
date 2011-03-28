@@ -5,7 +5,7 @@ configFiles=( .vimrc .zshrc .gitconfig .config/openbox/autostart.sh .config/open
 mkdir $backupDir
 for file in configFiles
 do
-   mv ~/file $backupDir
+   mv ~/$file $backupDir
 done
 echo "Your config files have been backed up to: $backupDir"
 
