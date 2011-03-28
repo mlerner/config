@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+#TEMP
+export TERM="rxvt"
+
 #------------------------------
 # History stuff
 #------------------------------
@@ -34,7 +37,6 @@ alias ..="cd .."
 alias py="python"
 
 alias thrust="ssh corey@109.169.57.37"
-alias thrustirc="ssh -t corey@109.169.57.37 screen -dr irssi"
 alias work="ssh cfadmin@cfslo.selfip.org"
 
 #------------------------------
@@ -55,11 +57,6 @@ PROMPT="%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg
 #------------------------------
 setopt autopushd
 
-
-
-
-
-
 # turn on utf-8 support
 export LANG=en_US.UTF-8
 
@@ -69,3 +66,8 @@ export LANG=en_US.UTF-8
 #alias mkdir='nocorrect mkdir'
 #alias mv='nocorrect mv'
 #alias rm='nocorrect rm'
+
+irc() {
+  printf \\033]0\;\%s\\007 "irc"
+  ssh -t corey@109.169.57.37 screen -dr irssi
+}
