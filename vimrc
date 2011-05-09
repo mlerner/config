@@ -27,17 +27,17 @@ set cinwords=if,unless,else,while,until,do,for,switch,case
 set formatoptions=tcqr
 set cindent
 
-if has('gui_running')
-   colorscheme solarized
-   set background=dark
-   set gfn=Inconsolata\ 12
-else
-   colorscheme solarized
-   set background=dark
-endif
+"if has('gui_running')
+"   colorscheme solarized
+"   set background=dark
+"   set gfn=Inconsolata\ 12
+"else
+"   colorscheme solarized
+"   set background=dark
+"endif
 
 " Line Numbers
-set nu
+set number
 
 " VIM DISPLAY OPTIONS
 " set showmode		" show which mode (insert, replace, visual)
