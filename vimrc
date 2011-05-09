@@ -1,6 +1,3 @@
-"TERM=xterm
-set t_Co=256
-
 " GENERAL OPTIONS
 behave xterm
 set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
@@ -24,15 +21,20 @@ set incsearch
 set showmatch
 set backspace=1
 set nohlsearch
-syntax on
 
 set cinoptions=:0,p0,t0
 set cinwords=if,unless,else,while,until,do,for,switch,case
 set formatoptions=tcqr
 set cindent
-set background=dark
 
-colorscheme koehler
+if has('gui_running')
+   colorscheme solarized
+   set background=dark
+   set gfn=Inconsolata\ 12
+else
+   colorscheme solarized
+   set background=dark
+endif
 
 " Line Numbers
 set nu
@@ -53,3 +55,8 @@ filetype indent on
 
 "enables filetype specific plugins
 filetype plugin on
+
+"allows moving after the end of the line in visual block mode"
+set virtualedit+=block
+
+syntax on

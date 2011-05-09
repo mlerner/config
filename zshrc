@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 #TEMP
-export TERM="rxvt"
+export TERM="rxvt-unicode"
 
 #------------------------------
 # History stuff
@@ -71,3 +71,5 @@ irc() {
   printf \\033]0\;\%s\\007 "irc"
   ssh -t corey@109.169.57.37 screen -dr irssi
 }
+
+alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
