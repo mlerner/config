@@ -73,3 +73,5 @@ irc() {
 }
 
 alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
+
+alias xrandrfull="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
