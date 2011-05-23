@@ -1,6 +1,6 @@
 URxvt*scrollBar: false
 !URxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
 !URxvt*boldFont: -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso8859-1
-URxvt*font: xft:Inconsolata
+URxvt*font: xft:Inconsolata:size=10
 *background: #000000
 *foreground: #ffffff
