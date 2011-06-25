@@ -60,3 +60,5 @@ filetype plugin on
 set virtualedit+=block
 
 syntax on
+
+set bg=dark
