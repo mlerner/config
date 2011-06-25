@@ -72,5 +72,6 @@ irc() {
   ssh -t corey@109.169.57.37 screen -dr irssi
 }
 
-#alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
-alias c='gcc -Werror -pedantic -o exec'
+alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
+
+alias fullscreen="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
