@@ -15,7 +15,6 @@ set tabstop=3		" ts, number of spaces that a tab is equivalent to
 set shiftwidth=3	" sw, number of spaces shifted left and righ when issuing << and >>
 set expandtab
 			"  commands
-" set number		" number lines
 set nocompatible
 set incsearch
 set showmatch
@@ -61,5 +60,3 @@ set virtualedit+=block
 set bg=dark
 
 syntax on
-
-set bg=dark
