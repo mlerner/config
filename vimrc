@@ -58,6 +58,7 @@ filetype plugin on
 
 "allows moving after the end of the line in visual block mode"
 set virtualedit+=block
+set bg=dark
 
 syntax on
 
