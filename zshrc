@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 #TEMP
-export TERM="rxvt-unicode"
+#export TERM="rxvt-unicode"
 
 #------------------------------
 # History stuff
@@ -74,4 +74,4 @@ irc() {
 
 alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
 
-alias fullscreen="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
+#alias fullscreen="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
