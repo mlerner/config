@@ -1,3 +1,6 @@
 [submodule "vim/bundle/easymotion"]
 	path = vim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "css-color"]
+	path = css-color
+	url = https://github.com/skammer/vim-css-color.git
