@@ -27,14 +27,14 @@ set cinwords=if,unless,else,while,until,do,for,switch,case
 set formatoptions=tcqr
 set cindent
 
-"if has('gui_running')
-"   colorscheme solarized
-"   set background=dark
-"   set gfn=Inconsolata\ 12
-"else
-"   colorscheme solarized
-"   set background=dark
-"endif
+set background=dark
+if has('gui_running')
+   colorscheme mustang
+   set gfn=Inconsolata\ 12
+   set guioptions=agi
+else
+   colorscheme koehler
+endif
 
 " Line Numbers
 set number
