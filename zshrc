@@ -35,6 +35,7 @@ alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias ..="cd .."
 alias py="python"
+alias v="gvim"
 
 alias thrust="ssh corey@109.169.57.37"
 alias work="ssh cfadmin@cfslo.selfip.org"
@@ -72,6 +73,6 @@ irc() {
   ssh -t corey@109.169.57.37 screen -dr irssi
 }
 
-alias c='gcc -ansi -Wall -pedantic -Werror -o exec'
+alias c='gcc -Wall -pedantic -Werror -o exec'
 
-alias xrandrfull="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
+alias fullscreen="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
