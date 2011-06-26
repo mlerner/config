@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 #TEMP
-export TERM="rxvt-unicode"
+#export TERM="rxvt-unicode"
 
 #------------------------------
 # History stuff

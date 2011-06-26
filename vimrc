@@ -15,7 +15,6 @@ set tabstop=3		" ts, number of spaces that a tab is equivalent to
 set shiftwidth=3	" sw, number of spaces shifted left and righ when issuing << and >>
 set expandtab
 			"  commands
-" set number		" number lines
 set nocompatible
 set incsearch
 set showmatch
@@ -58,5 +57,10 @@ filetype plugin on
 
 "allows moving after the end of the line in visual block mode"
 set virtualedit+=block
+set bg=dark
 
 syntax on
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
