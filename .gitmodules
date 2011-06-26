@@ -10,3 +10,6 @@
 [submodule "vim/autoload"]
 	path = vim/autoload
 	url = https://github.com/RichardBronosky/vim-pathogen.git
+[submodule "vim/bundle/color-darkspectrum"]
+	path = vim/bundle/color-darkspectrum
+	url = https://github.com/vim-scripts/darkspectrum.git
