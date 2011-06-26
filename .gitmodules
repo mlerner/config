@@ -7,3 +7,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/autoload"]
+	path = vim/autoload
+	url = https://github.com/RichardBronosky/vim-pathogen.git
