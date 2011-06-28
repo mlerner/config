@@ -75,4 +75,7 @@ irc() {
 
 alias c='gcc -Wall -pedantic -Werror -o exec'
 
-alias fullscreen="xrandr -s $(xrandr -q | sed -n '3p' | awk '{ print $1 }')"
+fullscreen() {
+   RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
+   xrandr -s $RESOLUTION
+}
