@@ -31,7 +31,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias l="ls"
-alias ls="ls --color=auto"
+alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 alias ..="cd .."
 alias py="python"
