@@ -28,7 +28,7 @@ set cindent
 
 set background=dark
 if has('gui_running')
-   colorscheme mustang
+   colorscheme vividchalk
    set gfn=Inconsolata\ 12
    set guioptions=agi
 else
