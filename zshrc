@@ -34,10 +34,8 @@ alias l="ls"
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 alias ..="cd .."
-alias py="python"
-alias v="gvim"
-
-alias thrust="ssh corey@109.169.57.37"
+alias c='gcc -Wall -pedantic -Werror -o exec'
+alias rwell="ssh coreyf@rwell.org"
 alias work="ssh cfadmin@cfslo.selfip.org"
 
 #------------------------------
@@ -73,9 +71,26 @@ irc() {
   ssh -t corey@109.169.57.37 screen -dr irssi
 }
 
-alias c='gcc -Wall -pedantic -Werror -o exec'
 
 fullscreen() {
    RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
    xrandr -s $RESOLUTION
+}
+
+py() {
+   if ((! $#)) && command -v python > /dev/null; then
+      ipython
+   else
+      python "$@"
+   fi
+}
+
+v() {
+   if [[ -n $DISPLAY ]] && command -v gvim > /dev/null; then
+      gvim "$@"
+   elif command -v vim > /dev/null; then
+      vim "$@"
+   else
+      vi "$@"
+   fi
 }
