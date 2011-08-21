@@ -9,10 +9,10 @@ set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which 
 			"   buffer list is restored from the viminfo file.  Buffers
 			"   without a file name and buffers for help files are not written
 			"   to the viminfo file.
-set history=500		" keep {number} lines of command line history
-set nowrap              " whether to wrap lines
-set tabstop=3		" ts, number of spaces that a tab is equivalent to
-set shiftwidth=3	" sw, number of spaces shifted left and righ when issuing << and >>
+set history=500 " keep {number} lines of command line history
+set nowrap " whether to wrap lines
+set tabstop=3 " ts, number of spaces that a tab is equivalent to
+set shiftwidth=3 " sw, number of spaces shifted left and righ when issuing << and >>
 set expandtab
 			"  commands
 set nocompatible
@@ -25,6 +25,11 @@ set cinoptions=:0,p0,t0
 set cinwords=if,unless,else,while,until,do,for,switch,case
 set formatoptions=tcqr
 set cindent
+
+set undodir=~/.vim/undodir
+set undofile "allow for persistent undo, i.e. undoing changes even after closing a file
+set undolevels = 1000 "maximum number of changes that can be undone
+set undoreload = 10000 "maximum number lines to save for undo on a buffer reload
 
 set background=dark
 if has('gui_running')
