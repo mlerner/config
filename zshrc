@@ -78,7 +78,7 @@ fullscreen() {
 }
 
 py() {
-   if ((! $#)) && command -v python > /dev/null; then
+   if ((! $#)) && command -v ipython > /dev/null; then
       ipython
    else
       python "$@"
