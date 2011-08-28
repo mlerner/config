@@ -26,11 +26,6 @@ set cinwords=if,unless,else,while,until,do,for,switch,case
 set formatoptions=tcqr
 set cindent
 
-set undodir=~/.vim/undodir
-set undofile "allow for persistent undo, i.e. undoing changes even after closing a file
-set undolevels = 1000 "maximum number of changes that can be undone
-set undoreload = 10000 "maximum number lines to save for undo on a buffer reload
-
 set background=dark
 if has('gui_running')
    colorscheme vividchalk
