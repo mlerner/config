@@ -52,7 +52,6 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 
 " UNDER REVIEW "
-"behave xterm
 "set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
 "
 "set cinoptions=:0,p0,t0
