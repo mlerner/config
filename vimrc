@@ -51,7 +51,6 @@ endif
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 
-
 " UNDER REVIEW "
 "behave xterm
 "set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
@@ -60,9 +59,3 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set cinwords=if,unless,else,while,until,do,for,switch,case
 "set formatoptions=tcqr
 "set cindent
-"
-"set showmode		" show which mode (insert, replace, visual)
-"set ruler
-"set title
-"set showcmd		" show commands in status line when typing
-"set wildmenu	
