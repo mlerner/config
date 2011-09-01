@@ -25,3 +25,6 @@
 [submodule "vim/bundle/python-complete"]
 	path = vim/bundle/python-complete
 	url = https://github.com/vim-scripts/pythoncomplete.git
+[submodule "vim/bundle/color-vividchalk"]
+	path = vim/bundle/color-vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
