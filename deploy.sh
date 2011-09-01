@@ -16,3 +16,6 @@ ln -sf $(pwd)/gitconfig ~/.gitconfig
 ln -sf $(pwd)/vim ~/.vim 
 ln -sf $(pwd)/vimrc ~/.vimrc 
 ln -sf $(pwd)/zshrc ~/.zshrc
+
+git submodule init
+git submodule update
