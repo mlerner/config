@@ -1,66 +1,68 @@
-" GENERAL OPTIONS
-behave xterm
-set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
-			"   are remembered.  
-			" " Maximum number of lines saved for each register.
-			" % When included, save and restore the buffer list.  If Vim is
-			"   started with a file name argument, the buffer list is not
-			"   restored.  If Vim is started without a file name argument, the
-			"   buffer list is restored from the viminfo file.  Buffers
-			"   without a file name and buffers for help files are not written
-			"   to the viminfo file.
-set history=500 " keep {number} lines of command line history
-set nowrap " whether to wrap lines
-set tabstop=3 " ts, number of spaces that a tab is equivalent to
-set shiftwidth=3 " sw, number of spaces shifted left and righ when issuing << and >>
-set expandtab
-			"  commands
-set nocompatible
-set incsearch
-set showmatch
-set backspace=1
-set nohlsearch
-
-set cinoptions=:0,p0,t0
-set cinwords=if,unless,else,while,until,do,for,switch,case
-set formatoptions=tcqr
-set cindent
-
-set background=dark
-if has('gui_running')
-   colorscheme vividchalk
-   set gfn=Inconsolata\ 12
-   set guioptions=agi
-else
-   colorscheme koehler
-endif
-
-" Line Numbers
-set number
-
-" VIM DISPLAY OPTIONS
-" set showmode		" show which mode (insert, replace, visual)
-" set ruler
-" set title
-" set showcmd		" show commands in status line when typing
-" set wildmenu	
-
-" Remembers where you were in the file when last editing
-au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-
-" enables filetype detection
-filetype on
-filetype indent on
-
-"enables filetype specific plugins
-filetype plugin on
-
-"allows moving after the end of the line in visual block mode"
-set virtualedit+=block
-set bg=dark
-
-syntax on
+"---- PLUGINS ----"
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+
+"---- GENERAL ----"
+
+set history=500  "number of lines to keep in history
+set number  "display line numbers
+set nowrap  "don't wrap lines
+set virtualedit+=block  "allows moving after the end of the line in visual block mode"
+set backspace=2  "make backspace work like most other apps  
+set showmatch  "highlights matching bracket
+
+
+"---- SEARCH ----"
+
+set incsearch
+set nohlsearch  "don't highlight results for a search
+
+"---- TABS/SPACES ----"
+
+set expandtab  "pressing 'tab' results in spaces
+set tabstop=3  "number of spaces that a tab is equivalent to
+set shiftwidth=3  "number of spaces shifted left and righ when issuing << and >>
+
+
+"---- FILETYPES ----"
+
+filetype on  "enables filetype detection
+filetype plugin on  "enable loading the plugin files for specific file types
+filetype indent on  "enable loading the indent file for specific file types
+
+
+"---- VISUALS ----"
+
+syntax on  "syntax highlighting
+if has('gui_running')
+   set guioptions=agi  "minimal gvim interface
+   set gfn=Inconsolata\ 12
+   colorscheme vividchalk
+else
+   colorscheme koehler
+endif
+
+
+"---- MISC ----"
+
+"remembers where you were in the file when last editing
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+
+
+" UNDER REVIEW "
+"behave xterm
+"set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
+"
+"set cinoptions=:0,p0,t0
+"set cinwords=if,unless,else,while,until,do,for,switch,case
+"set formatoptions=tcqr
+"set cindent
+"
+"set showmode		" show which mode (insert, replace, visual)
+"set ruler
+"set title
+"set showcmd		" show commands in status line when typing
+"set wildmenu	
