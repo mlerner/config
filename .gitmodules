@@ -28,3 +28,6 @@
 [submodule "vim/bundle/color-vividchalk"]
 	path = vim/bundle/color-vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
+[submodule "vim/bundle/conque"]
+	path = vim/bundle/conque
+	url = https://github.com/rson/vim-conque.git
