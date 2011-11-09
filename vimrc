@@ -38,7 +38,7 @@ filetype indent on  "enable loading the indent file for specific file types
 syntax on  "syntax highlighting
 if has('gui_running')
    set guioptions=agi  "minimal gvim interface
-   set gfn=Inconsolata\ 12
+   set gfn=Inconsolata\ 11
    colorscheme vividchalk
 else
    colorscheme koehler
