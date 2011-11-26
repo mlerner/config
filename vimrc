@@ -3,7 +3,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-
 "---- GENERAL ----"
 
 set history=500  "number of lines to keep in history
@@ -12,6 +11,7 @@ set nowrap  "don't wrap lines
 set virtualedit+=block  "allows moving after the end of the line in visual block mode"
 set backspace=2  "make backspace work like most other apps  
 set showmatch  "highlights matching bracket
+set shell=/bin/sh  "at the time, some plugins don't support fish shell
 
 
 "---- SEARCH ----"
