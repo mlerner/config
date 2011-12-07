@@ -1,4 +1,4 @@
-"---- PLUGINS ----"
+"---- LOAD PLUGINS ----"
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -45,16 +45,12 @@ else
 endif
 
 
+"---- PLUGIN SPECIFIC ----"
+
+let g:ConqueTerm_Color = 1 " only enable colours for the most recent 200 lines
+
+
 "---- MISC ----"
 
 "remembers where you were in the file when last editing
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-
-
-" UNDER REVIEW "
-"set viminfo='20,\"500,%	" ' Maximum number of previously edited files for which the marks
-"
-"set cinoptions=:0,p0,t0
-"set cinwords=if,unless,else,while,until,do,for,switch,case
-"set formatoptions=tcqr
-"set cindent
