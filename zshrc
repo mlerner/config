@@ -1,32 +1,21 @@
 #!/usr/bin/env zsh
 
-#TEMP
-#export TERM="rxvt-unicode"
-
-#------------------------------
-# History stuff
-#------------------------------
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-
-#------------------------------
-# Variables
-#------------------------------
+# Environment variables -----------------------
 export EDITOR="vim"
 export PAGER="less"
 export PATH="${PATH}:${HOME}/bin"
+export HISTFILE=~/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=1000
+export HISTCONTROL=erasedups
+#export TERM="rxvt-unicode"
 
-#------------------------------
-# Keybindings
-#------------------------------
+# Key bindings --------------------------------
 bindkey -v
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
-#------------------------------
-# Alias stuff
-#------------------------------
+# Aliases -------------------------------------
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
@@ -58,13 +47,6 @@ setopt autopushd
 
 # turn on utf-8 support
 export LANG=en_US.UTF-8
-
-
-# no spelling correction
-#alias cp='nocorrect cp'
-#alias mkdir='nocorrect mkdir'
-#alias mv='nocorrect mv'
-#alias rm='nocorrect rm'
 
 irc() {
   printf \\033]0\;\%s\\007 "irc"
