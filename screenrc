@@ -1,0 +1,14 @@
+# Use zsh
+shell -/bin/zsh
+
+# Disable startup message
+startup_message off
+
+# Ignore case in incremental search
+ignorecase on
+
+# Disable visual bell
+vbell off
+
+# Display status line: All windows, with the active window highlighted. Time and date right aligned.
+hardstatus alwayslastline "%{= kw} %-Lw%{=b Kw} %n%f %t %{-}%+Lw %=%{= kw}%C%A %D, %M/%d/%Y %{= dd}"
