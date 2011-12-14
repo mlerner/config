@@ -2,12 +2,14 @@
 export EDITOR="vim"
 export PAGER="less"
 export PATH="${PATH}:${HOME}/bin"
+#export TERM="rxvt-unicode"
+
+# History -------------------------------------
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=1000
-export HISTCONTROL=erasedups
 export LANG=en_US.UTF-8                      # utf-8 support
-#export TERM="rxvt-unicode"
+setopt hist_ignore_dups                      # don't store duplicate lines in history
 
 # Key bindings --------------------------------
 bindkey -v                                   # vim keybindings
@@ -31,11 +33,14 @@ alias cp='cp -i'
 alias l="ls"
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
+alias sudo="sudo -E"
 alias ..="cd .."
 alias c='gcc -Wall -pedantic -Werror -o exec'
 alias vps="ssh coreyf@rwell.org"
 alias work="ssh cfadmin@cfslo.selfip.org"
 alias irc="ssh -t coreyf@rwell.org screen -dr weechat"
+alias vim="vim -p"
+alias gvim="gvim -p"
 
 fullscreen() {
    RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
