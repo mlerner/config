@@ -5,7 +5,7 @@ import time
 import shutil
 
 def is_config(f):
-    not_config = {"README", "deploy.py", "passwords.kdb"}
+    not_config = {"README", "deploy.py"}
     if f.startswith(".") or f in not_config:
         return False
     return True
