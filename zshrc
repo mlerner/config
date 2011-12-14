@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 # Environment variables -----------------------
 export EDITOR="vim"
 export PAGER="less"
