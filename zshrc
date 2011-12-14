@@ -8,14 +8,25 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=1000
 export HISTCONTROL=erasedups
+export LANG=en_US.UTF-8                      # utf-8 support
 #export TERM="rxvt-unicode"
 
 # Key bindings --------------------------------
-bindkey -v
+bindkey -v                                   # vim keybindings
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
-# Aliases -------------------------------------
+# Prompt --------------------------------------
+PROMPT="%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg[blue]}%}»%{${reset_color}%} "
+
+# zsh features --------------------------------
+autoload -U compinit
+compinit
+setopt noclobber              # Don't write over existing files with >, use >! instead
+setopt rm_star_wait           # Prompts for confirmation after 'rm *' etc. Helps avoid mistakes like 'rm * o' when 'rm *.o' was intended
+setopt autopushd
+
+# Aliases and functions -----------------------
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
@@ -24,35 +35,9 @@ alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 alias ..="cd .."
 alias c='gcc -Wall -pedantic -Werror -o exec'
-alias rwell="ssh coreyf@rwell.org"
+alias vps="ssh coreyf@rwell.org"
 alias work="ssh cfadmin@cfslo.selfip.org"
-
-#------------------------------
-# Comp stuff
-#------------------------------
-autoload -U compinit
-compinit
-setopt NOCLOBBER # Don.t write over existing files with >, use >! instead
-setopt RM_STAR_WAIT # Prompts for confirmation after 'rm *' etc. Helps avoid mistakes like 'rm * o' when 'rm *.o' was intended
-
-#------------------------------
-# Prompt
-#------------------------------
-PROMPT="%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg[blue]}%}»%{${reset_color}%} "
-
-#------------------------------
-# Unorganized
-#------------------------------
-setopt autopushd
-
-# turn on utf-8 support
-export LANG=en_US.UTF-8
-
-irc() {
-  printf \\033]0\;\%s\\007 "irc"
-  ssh -t corey@109.169.57.37 screen -dr irssi
-}
-
+alias irc="ssh -t coreyf@rwell.org screen -dr weechat"
 
 fullscreen() {
    RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
