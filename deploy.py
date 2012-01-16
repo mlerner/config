@@ -20,7 +20,7 @@ for f in files:
     dest = os.path.join(os.getenv("HOME"), "."+f)
     if os.path.islink(dest):
         os.remove(dest) 
-    elif os.path.exists(dest)
+    elif os.path.exists(dest):
         shutil.move(dest, backup)
         backed_up.add(dest)
     os.symlink(src, dest)
