@@ -17,7 +17,8 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 # Prompt --------------------------------------
-PROMPT="%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg[blue]}%}»%{${reset_color}%} "
+autoload -U colors && colors
+PROMPT="%{${fg_bold[blue]}%}%m %{${fg_bold[grey]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg[grey]}%}»%{${reset_color}%} "
 
 # zsh features --------------------------------
 autoload -U compinit
