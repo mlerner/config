@@ -1,3 +1,6 @@
 [user]
 	name = Corey Farwell
 	email = coreyf@rwell.org
+
+[color]
+   ui = auto
