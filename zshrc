@@ -12,9 +12,7 @@ export LANG=en_US.UTF-8                      # utf-8 support
 setopt hist_ignore_dups                      # don't store duplicate lines in history
 
 # Key bindings --------------------------------
-bindkey -v                                   # vim keybindings
-bindkey "^[[A" history-search-backward
-bindkey "^[[B" history-search-forward
+bindkey -e                                   # emacs keybindings
 
 # Prompt --------------------------------------
 autoload -U colors && colors
