@@ -63,3 +63,13 @@ v() {
       vi "$@"
    fi
 }
+
+onsave() {
+   while true
+   do
+      eval "$1 &!" 
+      trap "kill $! &> /dev/null; return;" SIGINT SIGTERM
+      inotifywait -e modify -qq $2
+      kill $! &> /dev/null
+   done
+}
