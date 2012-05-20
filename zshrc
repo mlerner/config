@@ -41,12 +41,12 @@ alias irc="ssh -t coreyf@rwell.org screen -dr weechat"
 alias vim="vim -p"
 alias gvim="gvim -p"
 
-fullscreen() {
+function fullscreen {
    RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
    xrandr -s $RESOLUTION
 }
 
-py() {
+function py {
    if ((! $#)) && command -v ipython > /dev/null; then
       ipython
    else
@@ -54,7 +54,7 @@ py() {
    fi
 }
 
-v() {
+function v {
    if [[ -n $DISPLAY ]] && command -v gvim > /dev/null; then
       gvim "$@"
    elif command -v vim > /dev/null; then
@@ -64,7 +64,7 @@ v() {
    fi
 }
 
-onsave() {
+function onsave {
    while true
    do
       eval "$1 &!" 
