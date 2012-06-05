@@ -13,9 +13,6 @@
 [submodule "vim/bundle/color-darkspectrum"]
 	path = vim/bundle/color-darkspectrum
 	url = https://github.com/vim-scripts/darkspectrum.git
-[submodule "vim/bundle/color-mustang/colors"]
-	path = vim/bundle/color-mustang/colors
-	url = https://github.com/croaker/mustang-vim.git
 [submodule "vim/bundle/python-pep8"]
 	path = vim/bundle/python-pep8
 	url = git://github.com/nvie/vim-pep8.git
