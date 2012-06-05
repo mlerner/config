@@ -34,6 +34,3 @@
 [submodule "vim/bundle/js-jslint"]
 	path = vim/bundle/js-jslint
 	url = https://github.com/hallettj/jslint.vim.git
-[submodule "vim/bundle/color-mango"]
-	path = vim/bundle/color-mango
-	url = https://github.com/goatslacker/mango.vim
