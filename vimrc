@@ -3,21 +3,19 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+
 "---- GENERAL ----"
 
 set history=500  "number of lines to keep in history
 set number  "display line numbers
 set nowrap  "don't wrap lines
 set virtualedit+=block  "allows moving after the end of the line in visual block mode"
-set backspace=2  "make backspace work like most other apps  
+set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set showmatch  "highlights matching bracket
-set shell=/bin/sh  "at the time, some plugins don't support fish shell
+set nocompatible  "turn off vi compatibility
+set clipboard=unnamedplus  "yank to the system register (*) by default
+set incsearch  "jump immediately to result as i begin typing
 
-
-"---- SEARCH ----"
-
-set incsearch
-set nohlsearch  "don't highlight results for a search
 
 "---- TABS/SPACES ----"
 
@@ -39,15 +37,23 @@ syntax on  "syntax highlighting
 if has('gui_running')
    set guioptions=agi  "minimal gvim interface
    set gfn=Inconsolata\ 11
-   colorscheme vividchalk
+   colorscheme darkspectrum
+   set cursorline
+   highlight CursorLine guibg=#333333 ctermbg=none gui=none cterm=none
 else
    colorscheme koehler
 endif
 
 
+"---- SHORTCUTS ----"
+
+"sudo write this
+cmap w!! w !sudo tee % >/dev/null
+
+
 "---- PLUGIN SPECIFIC ----"
 
-let g:ConqueTerm_Color = 1 " only enable colours for the most recent 200 lines
+let g:ConqueTerm_Color = 1 "only enable colours for the most recent 200 lines
 
 
 "---- MISC ----"
