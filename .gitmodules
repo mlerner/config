@@ -13,9 +13,6 @@
 [submodule "vim/bundle/color-darkspectrum"]
 	path = vim/bundle/color-darkspectrum
 	url = https://github.com/vim-scripts/darkspectrum.git
-[submodule "vim/bundle/python-pep8"]
-	path = vim/bundle/python-pep8
-	url = git://github.com/nvie/vim-pep8.git
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
@@ -34,3 +31,6 @@
 [submodule "vim/bundle/js-jslint"]
 	path = vim/bundle/js-jslint
 	url = https://github.com/hallettj/jslint.vim.git
+[submodule "vim/bundle/python-flake8"]
+	path = vim/bundle/python-flake8
+	url = https://github.com/nvie/vim-flake8.git
