@@ -1,1 +1,3 @@
-/*jslint node:true, sloppy:true*/
+/*jslint browser: true, vars: true, sloppy: true, node: true */
+/*global alert, $, require, define  */
+/* vim: set ft=javascript: */
