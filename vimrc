@@ -54,6 +54,8 @@ cmap w!! w !sudo tee % >/dev/null
 "---- PLUGIN SPECIFIC ----"
 
 let g:ConqueTerm_Color = 1 "only enable colours for the most recent 200 lines
+let g:session_autosave = 'no' "don't prompt to save session on close
+map <leader>n :NERDTreeToggle<CR>
 
 
 "---- MISC ----"
