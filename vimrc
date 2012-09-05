@@ -2,6 +2,7 @@
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#infect()
 
 
 "---- GENERAL ----"
@@ -36,8 +37,8 @@ filetype indent on  "enable loading the indent file for specific file types
 syntax on  "syntax highlighting
 if has('gui_running')
    set guioptions=agi  "minimal gvim interface
-   set gfn=Inconsolata\ 11
-   colorscheme darkspectrum
+   set gfn=Inconsolata\ 12
+   colorscheme skittles_berry
    set cursorline
    highlight CursorLine guibg=#333333 ctermbg=none gui=none cterm=none
 else
@@ -56,6 +57,7 @@ cmap w!! w !sudo tee % >/dev/null
 let g:ConqueTerm_Color = 1 "only enable colours for the most recent 200 lines
 let g:session_autosave = 'no' "don't prompt to save session on close
 map <leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$'] "hide certain filetypes
 
 
 "---- MISC ----"
