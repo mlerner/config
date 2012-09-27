@@ -1,3 +1,8 @@
+# Check for local zshrc
+if [[ -f $HOME/.zshrc.local ]]; then
+   source $HOME/.zshrc.local
+fi
+
 # Environment variables -----------------------
 export EDITOR="vim"
 export PAGER="less"
