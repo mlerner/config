@@ -10,7 +10,7 @@ call pathogen#infect()
 set history=500  "number of lines to keep in history
 set number  "display line numbers
 set nowrap  "don't wrap lines
-set virtualedit+=block  "allows moving after the end of the line in visual block mode"
+set virtualedit+=block  "allows moving after the end of the line in visual block mode
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set showmatch  "highlights matching bracket
 set nocompatible  "turn off vi compatibility
