@@ -2,5 +2,13 @@
 	name = Corey Farwell
 	email = coreyf@rwell.org
 
+[alias]
+   st = status
+   ci = commit
+   di = diff
+   co = checkout
+   br = branch
+   lg = log
+
 [color]
    ui = auto
