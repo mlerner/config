@@ -28,7 +28,8 @@ autoload -U compinit
 compinit
 setopt noclobber              # Don't write over existing files with >, use >! instead
 setopt rm_star_wait           # Prompts for confirmation after 'rm *' etc. Helps avoid mistakes like 'rm * o' when 'rm *.o' was intended
-setopt autopushd
+setopt autopushd              # Automatically pushd directories
+setopt autocd                 # Just typing in name of directory changes to it
 
 # Aliases and functions -----------------------
 alias rm='rm -i'
@@ -38,7 +39,6 @@ alias l="ls"
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 alias sudo="sudo -E"
-alias ..="cd .."
 alias c='gcc -Wall -pedantic -Werror -o exec'
 alias vim="vim -p"
 alias gvim="gvim -p"
