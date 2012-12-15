@@ -2,7 +2,7 @@
 export EDITOR="vim"
 export PAGER="less"
 export PATH="${PATH}:${HOME}/bin"
-#export TERM="rxvt-unicode"
+export TERM="rxvt"
 
 # History -------------------------------------
 export HISTFILE=~/.zsh_history
