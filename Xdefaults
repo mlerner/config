@@ -1,6 +1,19 @@
+! disable scrollbar
 URxvt*scrollBar: false
-!URxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
-!URxvt*boldFont: -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso8859-1
-URxvt*font: xft:Inconsolata:size=10
-*background: #000000
-*foreground: #ffffff
+
+! specify font
+URxvt*font: xft:Inconsolata:size=14
+
+! required for transparency
+urxvt*depth: 32
+
+! add colors to man pages
+URxvt.colorIT: #87af5f
+URxvt.colorBD: #d7d7d7
+URxvt.colorUL: #87afd7
+
+! foreground
+*foreground: #d3d3d3
+
+! background (95% opacity)
+*background: [95]#000000

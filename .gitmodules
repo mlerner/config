@@ -13,12 +13,6 @@
 [submodule "vim/bundle/color-darkspectrum"]
 	path = vim/bundle/color-darkspectrum
 	url = https://github.com/vim-scripts/darkspectrum.git
-[submodule "vim/bundle/color-mustang/colors"]
-	path = vim/bundle/color-mustang/colors
-	url = https://github.com/croaker/mustang-vim.git
-[submodule "vim/bundle/python-pep8"]
-	path = vim/bundle/python-pep8
-	url = git://github.com/nvie/vim-pep8.git
 [submodule "vim/bundle/taglist"]
 	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
@@ -31,3 +25,21 @@
 [submodule "vim/bundle/conque"]
 	path = vim/bundle/conque
 	url = https://github.com/rson/vim-conque.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/js-jslint"]
+	path = vim/bundle/js-jslint
+	url = https://github.com/hallettj/jslint.vim.git
+[submodule "vim/bundle/python-flake8"]
+	path = vim/bundle/python-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "vim/bundle/session"]
+	path = vim/bundle/session
+	url = https://github.com/xolox/vim-session.git
+[submodule "vim/bundle/coffeescript"]
+	path = vim/bundle/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/color-skittles-berry"]
+	path = vim/bundle/color-skittles-berry
+	url = https://github.com/shawncplus/skittles_berry.git

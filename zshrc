@@ -1,3 +1,8 @@
+# Check for local zshrc
+if [[ -f $HOME/.zshrc.local ]]; then
+   source $HOME/.zshrc.local
+fi
+
 # Environment variables -----------------------
 export EDITOR="vim"
 export PAGER="less"
@@ -23,7 +28,8 @@ autoload -U compinit
 compinit
 setopt noclobber              # Don't write over existing files with >, use >! instead
 setopt rm_star_wait           # Prompts for confirmation after 'rm *' etc. Helps avoid mistakes like 'rm * o' when 'rm *.o' was intended
-setopt autopushd
+setopt autopushd              # Automatically pushd directories
+setopt autocd                 # Just typing in name of directory changes to it
 
 # Aliases and functions -----------------------
 alias rm='rm -i'
@@ -33,13 +39,20 @@ alias l="ls"
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 alias sudo="sudo -E"
-alias ..="cd .."
 alias c='gcc -Wall -pedantic -Werror -o exec'
-alias vps="ssh coreyf@rwell.org"
-alias work="ssh cfadmin@cfslo.selfip.org"
-alias irc="ssh -t coreyf@rwell.org screen -dr weechat"
 alias vim="vim -p"
 alias gvim="gvim -p"
+
+alias vps="ssh coreyf@rwell.org"
+alias irc="ssh -t coreyf@rwell.org screen -dr weechat"
+
+alias work="ssh cfadmin@cfslo.selfip.org"
+
+alias vogon="ssh cfarwell@vogon.csc.calpoly.edu"
+alias unix1="ssh cfarwell@unix1.csc.calpoly.edu"
+alias unix2="ssh cfarwell@unix2.csc.calpoly.edu"
+alias unix3="ssh cfarwell@unix3.csc.calpoly.edu"
+alias unix4="ssh cfarwell@unix4.csc.calpoly.edu"
 
 function fullscreen {
    RESOLUTION=$(xrandr -q | sed -n '3p' | awk '{ print $1 }')
