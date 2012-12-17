@@ -38,7 +38,7 @@ syntax on  "syntax highlighting
 if has('gui_running')
    set guioptions=agi  "minimal gvim interface
    set gfn=Inconsolata\ 12
-   colorscheme skittles_berry
+   colorscheme darkspectrum
    set cursorline
    highlight CursorLine guibg=#333333 ctermbg=none gui=none cterm=none
 else
