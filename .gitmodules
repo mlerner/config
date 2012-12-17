@@ -1,45 +1,45 @@
-[submodule "vim/bundle/easymotion"]
-	path = vim/bundle/easymotion
+[submodule "config/vim/bundle/easymotion"]
+	path = config/vim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "vim/bundle/css-color"]
-	path = vim/bundle/css-color
+[submodule "config/vim/bundle/css-color"]
+	path = config/vim/bundle/css-color
 	url = https://github.com/skammer/vim-css-color.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "config/vim/bundle/nerdtree"]
+	path = config/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/autoload"]
-	path = vim/autoload
+[submodule "config/vim/autoload"]
+	path = config/vim/autoload
 	url = https://github.com/RichardBronosky/vim-pathogen.git
-[submodule "vim/bundle/color-darkspectrum"]
-	path = vim/bundle/color-darkspectrum
+[submodule "config/vim/bundle/color-darkspectrum"]
+	path = config/vim/bundle/color-darkspectrum
 	url = https://github.com/vim-scripts/darkspectrum.git
-[submodule "vim/bundle/taglist"]
-	path = vim/bundle/taglist
+[submodule "config/vim/bundle/taglist"]
+	path = config/vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule "vim/bundle/python-complete"]
+[submodule "config/vim/bundle/python-complete"]
 	path = vim/bundle/python-complete
 	url = https://github.com/vim-scripts/pythoncomplete.git
-[submodule "vim/bundle/color-vividchalk"]
-	path = vim/bundle/color-vividchalk
+[submodule "config/vim/bundle/color-vividchalk"]
+	path = config/vim/bundle/color-vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
-[submodule "vim/bundle/conque"]
-	path = vim/bundle/conque
+[submodule "config/vim/bundle/conque"]
+	path = config/vim/bundle/conque
 	url = https://github.com/rson/vim-conque.git
-[submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
+[submodule "config/vim/bundle/fugitive"]
+	path = config/vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/js-jslint"]
-	path = vim/bundle/js-jslint
+[submodule "config/vim/bundle/js-jslint"]
+	path = config/vim/bundle/js-jslint
 	url = https://github.com/hallettj/jslint.vim.git
-[submodule "vim/bundle/python-flake8"]
-	path = vim/bundle/python-flake8
+[submodule "config/vim/bundle/python-flake8"]
+	path = config/vim/bundle/python-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule "vim/bundle/session"]
-	path = vim/bundle/session
+[submodule "config/vim/bundle/session"]
+	path = config/vim/bundle/session
 	url = https://github.com/xolox/vim-session.git
-[submodule "vim/bundle/coffeescript"]
-	path = vim/bundle/coffeescript
+[submodule "config/vim/bundle/coffeescript"]
+	path = config/vim/bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/color-skittles-berry"]
-	path = vim/bundle/color-skittles-berry
+[submodule "config/vim/bundle/color-skittles-berry"]
+	path = config/vim/bundle/color-skittles-berry
 	url = https://github.com/shawncplus/skittles_berry.git
