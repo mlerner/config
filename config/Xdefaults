@@ -2,7 +2,7 @@
 URxvt*scrollBar: false
 
 ! specify font
-URxvt*font: xft:Inconsolata:size=14
+URxvt*font: xft:Inconsolata:size=12
 
 ! required for transparency
 urxvt*depth: 32
