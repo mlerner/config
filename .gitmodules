@@ -43,3 +43,6 @@
 [submodule "config/vim/bundle/color-skittles-berry"]
 	path = config/vim/bundle/color-skittles-berry
 	url = https://github.com/shawncplus/skittles_berry.git
+[submodule "vim/bundle/python-complete"]
+	path = vim/bundle/python-complete
+	url = https://github.com/vim-scripts/pythoncomplete.git
