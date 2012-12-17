@@ -4,20 +4,14 @@ import os
 import time
 import shutil
 
-def is_config(f):
-    not_config = ("README", "deploy.py")
-    if f.startswith(".") or f in not_config:
-        return False
-    return True
-
 if __name__ == "__main__":
-    files = filter(is_config, os.listdir("."))
+    files = os.listdir("config")
     backup = "/tmp/backup-%d" % time.time()
     os.mkdir(backup)
     backed_up = set()
 
     for f in files:
-        src = os.path.join(os.getcwd(), f)
+        src = os.path.join(os.getcwd(), "config", f)
         dest = os.path.join(os.getenv("HOME"), "."+f)
         if os.path.islink(dest):
             os.remove(dest) 
