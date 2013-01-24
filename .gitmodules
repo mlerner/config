@@ -17,7 +17,7 @@
 	path = config/vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "config/vim/bundle/python-complete"]
-	path = vim/bundle/python-complete
+	path = config/vim/bundle/python-complete
 	url = https://github.com/vim-scripts/pythoncomplete.git
 [submodule "config/vim/bundle/color-vividchalk"]
 	path = config/vim/bundle/color-vividchalk
