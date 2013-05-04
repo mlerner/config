@@ -7,6 +7,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
 
+" Turn git gutter on by default
+let g:gitgutter_enabled = 1
 
 "---- GENERAL ----"
 
@@ -44,6 +46,9 @@ if has('gui_running')
    colorscheme darkspectrum
    set cursorline
    highlight CursorLine guibg=#333333 ctermbg=none gui=none cterm=none
+
+   "change color of gitgutter column
+   hi SignColumn ctermbg=232 guibg=#111111
 else
    colorscheme koehler
 endif
