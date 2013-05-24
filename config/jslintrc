@@ -1,3 +1,0 @@
-/*jslint browser: true, vars: true, sloppy: true, node: true */
-/*global alert, $, jQuery, require, define, d3, L, load, print, readline, wax */
-/* vim: set ft=javascript: */
