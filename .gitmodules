@@ -22,9 +22,6 @@
 [submodule "config/vim/bundle/color-vividchalk"]
 	path = config/vim/bundle/color-vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
-[submodule "config/vim/bundle/conque"]
-	path = config/vim/bundle/conque
-	url = https://github.com/rson/vim-conque.git
 [submodule "config/vim/bundle/fugitive"]
 	path = config/vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
