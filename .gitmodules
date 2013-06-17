@@ -19,12 +19,6 @@
 [submodule "config/vim/bundle/python-complete"]
 	path = config/vim/bundle/python-complete
 	url = https://github.com/vim-scripts/pythoncomplete.git
-[submodule "config/vim/bundle/color-vividchalk"]
-	path = config/vim/bundle/color-vividchalk
-	url = https://github.com/tpope/vim-vividchalk.git
-[submodule "config/vim/bundle/conque"]
-	path = config/vim/bundle/conque
-	url = https://github.com/rson/vim-conque.git
 [submodule "config/vim/bundle/fugitive"]
 	path = config/vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -37,9 +31,6 @@
 [submodule "config/vim/bundle/coffeescript"]
 	path = config/vim/bundle/coffeescript
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "config/vim/bundle/color-skittles-berry"]
-	path = config/vim/bundle/color-skittles-berry
-	url = https://github.com/shawncplus/skittles_berry.git
 [submodule "config/vim/bundle/fish"]
 	path = config/vim/bundle/fish
 	url = git://github.com/vim-scripts/fish.vim.git
