@@ -40,3 +40,6 @@
 [submodule "config/vim/bundle/js-jshint"]
 	path = config/vim/bundle/js-jshint
 	url = https://github.com/wookiehangover/jshint.vim.git
+[submodule "config/vim/bundle/vundle"]
+	path = config/vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
