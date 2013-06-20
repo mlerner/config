@@ -1,6 +1,9 @@
 [user]
-	name = Corey Farwell
-	email = coreyf@rwell.org
+   name = Corey Farwell
+   email = coreyf@rwell.org
+
+[core]
+   excludesfile = "~/.gitignore_global"
 
 [alias]
    st = status
