@@ -3,9 +3,23 @@ set shell=/bin/sh
 
 "---- LOAD PLUGINS ----"
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'airblade/vim-gitgutter'
+Bundle 'vim-scripts/fish.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'nvie/vim-flake8'
+Bundle 'scrooloose/nerdtree'
+Bundle 'skammer/vim-css-color'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/darkspectrum'
+Bundle 'vim-scripts/pythoncomplete'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'wookiehangover/jshint.vim'
 
 " Turn git gutter on by default
 let g:gitgutter_enabled = 1
@@ -62,8 +76,6 @@ cmap w!! w !sudo tee % >/dev/null
 
 "---- PLUGIN SPECIFIC ----"
 
-let g:ConqueTerm_Color = 1 "only enable colours for the most recent 200 lines
-let g:session_autosave = 'no' "don't prompt to save session on close
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$'] "hide certain filetypes
 
