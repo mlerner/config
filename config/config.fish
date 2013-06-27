@@ -50,5 +50,3 @@ end
 function serve
    python -m SimpleHTTPServer
 end
-
-alias gg "git log --graph --pretty=oneline --abbrev-commit"

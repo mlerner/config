@@ -6,6 +6,8 @@
    excludesfile = "~/.gitignore_global"
 
 [alias]
+   pr = pull --rebase
+   gr = log --pretty=oneline --graph --decorate --all --abbrev-commit
    st = status
    ci = commit
    di = diff
