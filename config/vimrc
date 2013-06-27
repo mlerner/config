@@ -9,17 +9,25 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'airblade/vim-gitgutter'
-Bundle 'vim-scripts/fish.vim'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'nvie/vim-flake8'
 Bundle 'scrooloose/nerdtree'
 Bundle 'skammer/vim-css-color'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/darkspectrum'
-Bundle 'vim-scripts/pythoncomplete'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'scrooloose/syntastic'
+
+" Python
+Bundle 'vim-scripts/pythoncomplete'
+
+" JavaScript
 Bundle 'wookiehangover/jshint.vim'
+
+" Fish
+Bundle 'vim-scripts/fish.vim'
+
+" CoffeeScript
+Bundle 'kchmck/vim-coffee-script'
 
 " Turn git gutter on by default
 let g:gitgutter_enabled = 1
