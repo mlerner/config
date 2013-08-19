@@ -44,6 +44,7 @@ set showmatch  "highlights matching bracket
 set nocompatible  "turn off vi compatibility
 set clipboard=unnamedplus  "yank to the system register (*) by default
 set incsearch  "jump immediately to result as i begin typing
+set laststatus=2
 
 
 "---- TABS/SPACES ----"
