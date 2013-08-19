@@ -30,7 +30,7 @@ Bundle 'vim-scripts/fish.vim'
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
 
-" Turn git gutter on by default
+" Turn git gutter realtime off until bug gets fixed
 let g:gitgutter_realtime = 1
 
 "---- GENERAL ----"
