@@ -8,12 +8,15 @@
 [alias]
    pr = pull --rebase
    gr = log --pretty=oneline --graph --decorate --all --abbrev-commit
-   st = status
+   st = status -sb
    ci = commit
    di = diff
    co = checkout
    br = branch
-   lg = log
+   lg = log --decorate
+
+[push]
+   default = simple
 
 [color]
    ui = auto
