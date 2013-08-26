@@ -1,0 +1,4 @@
+Host rackspace
+   HostName 50.57.135.20
+   Port 22
+   User coreyf
