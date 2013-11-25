@@ -25,7 +25,7 @@ Bundle 'vim-scripts/pythoncomplete'
 Bundle 'wookiehangover/jshint.vim'
 
 " Fish
-Bundle 'vim-scripts/fish.vim'
+Bundle 'dag/vim-fish'
 
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
