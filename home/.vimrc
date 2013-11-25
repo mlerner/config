@@ -30,6 +30,12 @@ Bundle 'dag/vim-fish'
 " CoffeeScript
 Bundle 'kchmck/vim-coffee-script'
 
+" Rust
+Bundle 'wting/rust.vim'
+
+" TOML
+Bundle 'cespare/vim-toml'
+
 " Turn git gutter realtime off until bug gets fixed
 let g:gitgutter_realtime = 0
 
