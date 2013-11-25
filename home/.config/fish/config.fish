@@ -21,7 +21,7 @@ alias unix2 "ssh cfarwell@unix2.csc.calpoly.edu"
 alias unix3 "ssh cfarwell@unix3.csc.calpoly.edu"
 alias unix4 "ssh cfarwell@unix4.csc.calpoly.edu"
 
-set -x PATH /home/coreyf/bin $PATH
+set -x PATH ~/bin $PATH
 
 function resetwireless
    sudo rmmod rtl8192se
