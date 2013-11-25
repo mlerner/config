@@ -1,3 +1,7 @@
+if test -e ~/.config/fish/local.fish
+   source ~/.config/fish/local.fish
+end
+
 set fish_greeting ""
 
 alias rm 'command rm -i'
