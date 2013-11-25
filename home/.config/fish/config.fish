@@ -48,5 +48,5 @@ function xinvertcolors
 end
 
 function serve
-   python -m SimpleHTTPServer
+   python -m SimpleHTTPServer $argv
 end
