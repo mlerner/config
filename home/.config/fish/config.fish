@@ -4,7 +4,7 @@ alias rm 'command rm -i'
 alias mv 'command mv -i'
 alias cp 'command cp -i'
 alias l "ls"
-#alias grep "command grep --color=auto"
+alias grep "command grep --color=auto"
 alias sudo "command sudo -E"
 alias c 'gcc -Wall -pedantic -Werror -o exec'
 alias vim "command vim -p"
