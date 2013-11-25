@@ -10,17 +10,6 @@ alias c 'gcc -Wall -pedantic -Werror -o exec'
 alias vim "command vim -p"
 alias gvim "command gvim -p"
 
-alias vps "ssh coreyf@rwell.org"
-alias irc "ssh -t coreyf@rwell.org screen -dr weechat"
-
-alias work "ssh cfadmin@cfslo.selfip.org"
-
-alias vogon "ssh cfarwell@vogon.csc.calpoly.edu"
-alias unix1 "ssh cfarwell@unix1.csc.calpoly.edu"
-alias unix2 "ssh cfarwell@unix2.csc.calpoly.edu"
-alias unix3 "ssh cfarwell@unix3.csc.calpoly.edu"
-alias unix4 "ssh cfarwell@unix4.csc.calpoly.edu"
-
 set -x PATH ~/bin $PATH
 
 function resetwireless
