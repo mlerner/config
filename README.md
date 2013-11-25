@@ -1,5 +1,7 @@
-# frewsxcv's config files
+# Config
 
-All of the files are found in `config/`
+This repository contains all configuration files used by [frewsxcv](http://github.com/frewsxcv). The files can be found in [/home](/home). This repository is structured for use with [homesick](https://github.com/technicalpickles/homesick).
 
-Run the `python deploy.py` script to symlink all the config files to the home folder
+## License
+
+Unless specified otherwise, all content in this repository is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
