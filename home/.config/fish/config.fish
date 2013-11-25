@@ -12,14 +12,6 @@ alias gvim "command gvim -p"
 
 set -x PATH ~/bin $PATH
 
-function resetwireless
-   sudo rmmod rtl8192se
-   echo "Unloading module rtl8192se"
-   sleep 4
-   echo "Adding module rtl8192se"
-   sudo modprobe rtl8192se
-end
-
 function terminalcolors
    echo -e "\\e[0mCOLOR_NC (No color)"
    echo -e "\\e[1;37mCOLOR_WHITE\\t\\e[0;30mCOLOR_BLACK"
