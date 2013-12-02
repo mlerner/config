@@ -17,6 +17,7 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
+Bundle 'kien/ctrlp.vim'
 
 " Python
 Bundle 'vim-scripts/pythoncomplete'
