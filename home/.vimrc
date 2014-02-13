@@ -78,7 +78,7 @@ let g:airline_right_sep=''
 syntax on  "syntax highlighting
 if has('gui_running')
    set guioptions=agi  "minimal gvim interface
-   set gfn=Inconsolata:h14
+   set gfn=Inconsolata:h16
    colorscheme ir_black
    set cursorline
 
