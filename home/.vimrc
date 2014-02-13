@@ -102,6 +102,19 @@ cmap w!! w !sudo tee % >/dev/null
 
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$'] "hide certain filetypes
+let g:airline_mode_map = {
+   \    '__' : '-',
+   \    'n'  : 'N',
+   \    'i'  : 'I',
+   \    'R'  : 'R',
+   \    'c'  : 'C',
+   \    'v'  : 'V',
+   \    'V'  : 'V',
+   \    '' : 'V',
+   \    's'  : 'S',
+   \    'S'  : 'S',
+   \    '' : 'S',
+   \ }
 
 
 "---- MISC ----"
