@@ -53,6 +53,7 @@ set clipboard=unnamedplus  "yank to the system register (*) by default
 set incsearch  "jump immediately to result as i begin typing
 set laststatus=2
 set autoindent
+set wildmode=list  "show list instead of automatically autocompleting
 
 
 "---- TABS/SPACES ----"
